@@ -12,11 +12,10 @@ export default function AboutSection() {
           <h2 className={styles.h2}>About me:</h2>
         </Link>
         <p className={styles.p}>
-          Oh, you`&apos;`re still here? You actually want to know some stuff
-          about me, cool. I`&apos;m a former physiotherapist turned
-          web-developer. I love to see design come to life, and to make stuff
-          that makes life easier! Head into the About page for more info if you
-          are so inclined.
+          Oh, you&apos;re still here? You actually want to know some stuff about
+          me, cool. I&apos;m a former physiotherapist turned web-developer. I
+          love to see design come to life, and to make stuff that makes life
+          easier! Head into the About page for more info if you are so inclined.
         </p>
       </section>
     </div>
