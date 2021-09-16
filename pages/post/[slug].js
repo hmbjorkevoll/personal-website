@@ -33,7 +33,10 @@ const Post = (props) => {
       )}
       {authorImage && (
         <div>
-          <img src={urlFor(authorImage).width(50).url()} />
+          <Image
+            alt="picture of author"
+            src={urlFor(authorImage).width(50).url()}
+          />
         </div>
       )}
       <BlockContent
