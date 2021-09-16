@@ -46,7 +46,7 @@ export default function BlogSection(props) {
                   <span>
                     <Image
                       src={post.mainImage.asset.url}
-                      alt={post.mainImage.alt}
+                      alt=""
                       width="400px"
                       height="267px"
                       className={styles.image}

@@ -60,7 +60,11 @@ export const Navbar = () => {
                 rel="noreferrer"
                 href="https://www.github.com/hmbjorkevoll"
               >
-                <FaGithub target="_blank" className={styles.navLink} />
+                <FaGithub
+                  alt="Github logo"
+                  target="_blank"
+                  className={styles.navLink}
+                />
               </a>
             </li>
             <li className={styles.desktop}>
@@ -69,7 +73,7 @@ export const Navbar = () => {
                 rel="noreferrer"
                 href="https://www.linkedin.com/in/hans-martin-bj%C3%B8rkevoll/"
               >
-                <FaLinkedin className={styles.navLink} />
+                <FaLinkedin alt="Linkedin logo" className={styles.navLink} />
               </a>
             </li>
             <li className={styles.desktop}>
@@ -78,7 +82,7 @@ export const Navbar = () => {
                 rel="noreferrer"
                 href="https://twitter.com/hmbjorkevoll"
               >
-                <FaTwitter className={styles.navLink} />
+                <FaTwitter alt="Twitter logo" className={styles.navLink} />
               </a>
             </li>
           </ul>

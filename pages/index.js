@@ -9,6 +9,9 @@ import AboutSection from "../components/aboutSection";
 export default function Home() {
   return (
     <div>
+      <Head>
+        <title>Hans Martin Bjørkevoll - web developer</title>
+      </Head>
       <HeroSection />
       <div className={styles.sections}>
         <BlogSection classsName={styles.blogSection} id="blogSection" />
