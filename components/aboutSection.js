@@ -2,12 +2,16 @@ import Head from "next/head";
 import Image from "next/image";
 import Navbar from "../components/navbar";
 import styles from "../styles/AboutSection.module.css";
+import Link from "next/link";
 
 export default function AboutSection() {
   return (
     <div className={styles.aboutSection}>
+      
       <section className={styles.section}>
-        <h2 className={styles.h2}>About me</h2>
+        <Link href="/about" passHref>
+          <h2 className={styles.h2}>About me:</h2>
+        </Link>
         {/* Insert blog post snippets from latest posts in here */}
         <p className={styles.p}>
           Oh, you're still here? You actually want to know some stuff about me,

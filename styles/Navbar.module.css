@@ -1,15 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap");
-
-/* variables */
-
-/* base styles */
-
 /* mobile */
 @media screen and (max-width: 619px) {
-  /* HAMBURGER MENU HERE */
   .navLink {
     margin-left: 10%;
     transform: translateX(-10%);
+    color: var(--hero-bg-color);
   }
 
   .top {
@@ -66,6 +61,23 @@
 
   .navLink {
     cursor: pointer;
+    color: var(--hero-bg-color);
+  }
+
+  .blog .projects .about {
+    color: var(--hero-bg-color);
+  }
+
+  .blog:hover {
+    color: turquoise;
+  }
+
+  .projects:hover {
+    color: lightskyblue;
+  }
+
+  .about:hover {
+    color: lightgreen;
   }
 
   .navLink:hover {
@@ -109,10 +121,15 @@
 
   .navLink {
     cursor: pointer;
+    color: var(--hero-bg-color);
   }
 
   .navLink:hover {
     transform: rotate(10deg) translateZ(0px) scale(1.1);
+  }
+
+  .blog .projects .about {
+    color: var(--hero-bg-color);
   }
 
   .blog:hover {
@@ -167,6 +184,23 @@
 
   .navLink {
     cursor: pointer;
+    color: var(--hero-bg-color);
+  }
+
+  .blog .projects .about {
+    color: var(--hero-bg-color);
+  }
+
+  .blog:hover {
+    color: turquoise;
+  }
+
+  .projects:hover {
+    color: lightskyblue;
+  }
+
+  .about:hover {
+    color: lightgreen;
   }
 
   .navLink:hover {

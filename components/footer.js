@@ -5,9 +5,9 @@ import HomeIcon from "./IconHomeNavbar";
 export const Footer = () => {
   return (
     <div className={styles.footer}>
-      <a className={styles.a}>© 2021</a>
-      <a className={styles.a}>Hans Martin Bjørkevoll</a>
-      <a className={styles.a}>All Rights Reserved</a>
+      <a className={styles.a}>
+        © 2021 Hans Martin Bjørkevoll. All rights reserved
+      </a>
     </div>
   );
 };

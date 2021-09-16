@@ -1,18 +1,52 @@
 .projectsPage {
+  max-width: 100vw;
+  justify-content: center;
   display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-items: center;
+}
+
+.section {
+  max-width: 1200px;
   justify-content: center;
 }
 
-.buttons {
-  align-content: flex-end;
+.headline {
+  color: var(--hero-bg-color);
+  text-align: center;
+  cursor:default;
 }
 
-.sourceCode {
+.allPosts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 20px 20px;
+  min-width: 320px;
 }
 
-.link {
-  align-items: flex-end;
+.postCard {
+  margin: 15px;
+  min-width: 315px;
+  max-width: 450px;
+  color: rgb(235, 235, 235);
+  background: var(--hero-bg-color);
+  border-radius: 8px;
+  box-shadow: 4px 8px 8px hsl(0deg 0% 0% / 0.38);
+  cursor: pointer;
+}
+
+.image {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.title {
+  color: rgb(235, 235, 235);
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.p {
+  color: rgb(235, 235, 235);
+  margin-left: 5px;
+  margin-right: 5px;
 }

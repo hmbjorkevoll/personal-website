@@ -37,7 +37,7 @@ export default function BlogSection(props) {
         <div className={styles.recentPosts}>
           {postData &&
             postData.map((post) => (
-              <article key={post.slug.current} className={styles.post}>
+              <article key={post.slug.current} className={styles.postCard}>
                 <Link
                   href={"/post/" + post.slug.current}
                   key={post.slug.current}
@@ -47,8 +47,8 @@ export default function BlogSection(props) {
                     <Image
                       src={post.mainImage.asset.url}
                       alt={post.mainImage.alt}
-                      width="300px"
-                      height="200px"
+                      width="400px"
+                      height="267px"
                       className={styles.image}
                     />
                     <span>

@@ -1,13 +1,20 @@
-.section {
-  display: flex;
-  flex-direction: column;
+.feed {
   max-width: 100vw;
+  justify-content: center;
+  display: flex;
+  position: relative;
+  padding-bottom: 140px;
+}
+
+.section {
+  max-width: 1200px;
+  justify-content: center;
 }
 
 .headline {
   color: var(--hero-bg-color);
   text-align: center;
-  cursor: pointer;
+  font-size: 50px;
 }
 
 .allPosts {
@@ -18,9 +25,10 @@
   min-width: 320px;
 }
 
-.post {
-  margin: 5px;
-  width: 300px;
+.postCard {
+  margin: 15px;
+  min-width: 315px;
+  max-width: 450px;
   color: rgb(235, 235, 235);
   background: var(--hero-bg-color);
   border-radius: 8px;
@@ -45,15 +53,23 @@
   margin-right: 5px;
 }
 
-@media screen and (min-width: 970px) {
-  .post {
-    margin-left: 7vw;
-    margin-right: 7vw;
-  }
+.triangle {
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
 }
 
-@media screen and (min-width: 1380px) {
-  .post {
-    margin: 2vw;
-  }
+.triangle svg {
+  position: relative;
+  display: block;
+  width: calc(246% + 1.3px);
+  height: 144px;
+  transform: rotateY(180deg);
+}
+
+.triangle .shapeFill {
+  fill: var(--hero-bg-color);
 }
