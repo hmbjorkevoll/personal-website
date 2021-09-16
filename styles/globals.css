@@ -1,9 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap");
+
+:root {
+  --hero-bg-color: #202b42;
+}
+
+/* mobile */
+.mobileNavbar {
+  height: 100vh;
+  width: 100vw;
+  background: white;
+  opacity: 0.95;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  transition: all 250ms ease-in-out;
+  user-select: none;
+}
+
+
+
+.menuItems {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  font-size: 60px;
+  text-align: center;
+  text-decoration: none;
+  margin: 0;
+  padding: 10%;
+  left: 50%;
+}
+
+/* small tablet */
+@media screen and (min-width: 620px) {
+}
+
+/* large tablet & small desktop */
+@media screen and (min-width: 960px) {
+}
+
+/* desktop */
+@media screen and (min-width: 1200px) {
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: "Inter", Helvetica Neue, sans-serif;
+  scroll-behavior: smooth;
+}
+
+.name {
+  font-family: "Lobster", cursive;
 }
 
 a {

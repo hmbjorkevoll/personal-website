@@ -1,0 +1,18 @@
+.projectsPage {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.buttons {
+  align-content: flex-end;
+}
+
+.sourceCode {
+}
+
+.link {
+  align-items: flex-end;
+}

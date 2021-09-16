@@ -1,0 +1,80 @@
+.section {
+  display: flex;
+  flex-direction: column;
+  max-width: 100vw;
+}
+
+.h2 {
+  color: var(--hero-bg-color);
+  text-align: center;
+  cursor: pointer;
+}
+
+.recentPosts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 20px 20px;
+  min-width: 320px;
+}
+
+.post {
+  margin: 5px;
+  width: 300px;
+  color: rgb(235, 235, 235);
+  background: var(--hero-bg-color);
+  border-radius: 8px;
+  box-shadow: 4px 8px 8px hsl(0deg 0% 0% / 0.38);
+  cursor: pointer;
+}
+
+.image {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.title {
+  color: rgb(235, 235, 235);
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.p {
+  color: rgb(235, 235, 235);
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.triangle {
+  position: absolute;
+  bottom: 10;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.triangle svg {
+  position: relative;
+  display: block;
+  width: calc(246% + 1.3px);
+  height: 144px;
+  transform: rotateY(180deg);
+}
+
+.triangle .shapeFill {
+  fill: var(--hero-bg-color);
+}
+
+@media screen and (min-width: 970px) {
+  .post {
+    margin-left: 8vw;
+    margin-right: 8vw;
+  }
+}
+
+@media screen and (min-width: 1380px) {
+  .post {
+    margin: 5px;
+  }
+}

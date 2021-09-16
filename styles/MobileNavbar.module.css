@@ -1,0 +1,60 @@
+.mobileNavbar {
+  height: 100vh;
+  width: 100vw;
+  background: white;
+  opacity: 0.95;
+  position: fixed;
+  top: 72px;
+  right: 0;
+  z-index: 1;
+  transition: all 500ms ease-in-out;
+  user-select: none;
+}
+
+.close {
+  margin-left: 78%;
+  margin-top: 7%;
+}
+
+.menuItems {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  font-size: 60px;
+  text-align: center;
+  text-decoration: none;
+  margin: 0;
+  padding: 10%;
+  left: 50%;
+}
+
+.navLink {
+  cursor: pointer;
+}
+
+.navLink:hover {
+  transform: rotate(10deg) translateZ(0px) scale(1.1);
+}
+
+.blog:hover {
+  color: turquoise;
+}
+
+.projects:hover {
+  color: lightskyblue;
+}
+
+.about:hover {
+  color: lightgreen;
+}
+
+
+.navbar ul {
+  margin-left: auto;
+  list-style-type: none;
+  padding: 0;
+}
+.navbar li {
+  display: inline-block;
+  margin-left: 20px;
+}
