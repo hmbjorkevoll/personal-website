@@ -20,31 +20,35 @@ const Post = (props) => {
   } = props;
 
   return (
-    <article>
-      <h1>{title}</h1>
-      <span>By {name}</span>
-      {categories && (
-        <ul>
-          Posted in
-          {categories.map((category) => (
-            <li key={category}>{category}</li>
-          ))}
-        </ul>
-      )}
-      {authorImage && (
-        <div>
-          <Image
-            alt="picture of author"
-            src={urlFor(authorImage).width(50).url()}
-          />
-        </div>
-      )}
-      <BlockContent
-        blocks={body}
-        imageOptions={{ w: 320, h: 240, fit: "max" }}
-        {...client.config()}
-      />
-    </article>
+    <div className={styles.blogPage}>
+      <article className={styles.blogPost}>
+        <h1>{title}</h1>
+        <span>By {name}</span>
+        {categories && (
+          <ul>
+            Posted in
+            {categories.map((category) => (
+              <li key={category}>{category}</li>
+            ))}
+          </ul>
+        )}
+        {authorImage && (
+          <div>
+            <Image
+              width="320px"
+              height="240px"
+              alt="picture of author"
+              src={urlFor(authorImage).width(320).url()}
+            />
+          </div>
+        )}
+        <BlockContent
+          blocks={body}
+          imageOptions={{ w: 450, h: 300, fit: "max" }}
+          {...client.config()}
+        />
+      </article>
+    </div>
   );
 };
 
