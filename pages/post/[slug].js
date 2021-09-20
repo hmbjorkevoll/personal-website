@@ -35,10 +35,11 @@ const Post = (props) => {
         {authorImage && (
           <div>
             <Image
-              width="320px"
-              height="240px"
+              className={styles.authorImage}
+              width="50px"
+              height="50px"
               alt="picture of author"
-              src={urlFor(authorImage).width(320).url()}
+              src={urlFor(authorImage).width(100).url()}
             />
           </div>
         )}
