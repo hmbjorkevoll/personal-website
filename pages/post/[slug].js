@@ -14,7 +14,7 @@ const Post = (props) => {
   const {
     title = "Missing title",
     name = "Missing name",
-    categories,
+
     authorImage,
     body = [],
   } = props;
@@ -22,16 +22,7 @@ const Post = (props) => {
   return (
     <div className={styles.blogPage}>
       <article className={styles.blogPost}>
-        <h1>{title}</h1>
-        <span>By {name}</span>
-        {categories && (
-          <ul>
-            Posted in
-            {categories.map((category) => (
-              <li key={category}>{category}</li>
-            ))}
-          </ul>
-        )}
+        <h1 className={styles.h1}>{title}</h1>
         {authorImage && (
           <div>
             <Image
@@ -41,9 +32,11 @@ const Post = (props) => {
               alt="picture of author"
               src={urlFor(authorImage).width(100).url()}
             />
+            <span className={styles.authorName}>By {name}</span>
           </div>
         )}
         <BlockContent
+          className={styles.blockContent}
           blocks={body}
           imageOptions={{ w: 450, h: 300, fit: "max" }}
           {...client.config()}
@@ -56,7 +49,6 @@ const Post = (props) => {
 const query = groq`*[_type == "post" && slug.current == $slug][0]{
   title,
   "name": author->name,
-  "categories": categories[]->title,
   "authorImage": author->image,
   body
 }`;
