@@ -4,6 +4,7 @@ import styles from "../styles/ProjectsSection.module.css";
 import Link from "next/link";
 import noteAppPic from "../public/noteApp.PNG";
 import blogPic from "../public/blogPic.PNG";
+import socialProofPic from "../public/socialProof.PNG";
 import { FaGlobe } from "react-icons/fa";
 
 export default function ProjectsSection() {
@@ -31,20 +32,52 @@ export default function ProjectsSection() {
                 </p>
               </span>
               <div className={styles.buttons}>
-                <Link
+                <a
                   target="_blank"
                   rel="noreferrer"
                   href="https://github.com/hmbjorkevoll/NotesApp"
-                  passHref
+                  className={styles.sourceCode}
                 >
-                  <a className={styles.sourceCode}>{`< > View source code`}</a>
-                </Link>
-                <Link
+                  {`< > View source code`}
+                </a>
+                <a
                   target="_blank"
                   rel="noreferrer"
                   href="https://hmbjorkevoll.github.io/NotesApp/"
-                  passHref
+                  className={styles.link}
                 >
+                  <FaGlobe /> View live project
+                </a>
+              </div>
+            </span>
+          </article>
+          <article className={styles.projectCard}>
+            <span>
+              <Image
+                src={blogPic}
+                alt=""
+                width="400px"
+                height="267px"
+                className={styles.image}
+              />
+              <span>
+                <h3 className={styles.title}>Personal homepage</h3>
+                <p className={styles.p}>
+                  Made with Next.js and Sanity.io as a learning project, and a
+                  way to document and share what I have learned on the way.
+                </p>
+              </span>
+              <div className={styles.buttons}>
+                <a
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://github.com/hmbjorkevoll/personal-website"
+                  passHref
+                  className={styles.sourceCode}
+                >
+                  {`< > View source code`}
+                </a>
+                <Link href="/" passHref>
                   <a className={styles.link}>
                     <FaGlobe /> View live project
                   </a>
@@ -53,41 +86,45 @@ export default function ProjectsSection() {
             </span>
           </article>
           <article className={styles.projectCard}>
-            <Link href="/" passHref>
+            <span>
+              <Image
+                src={socialProofPic}
+                alt=""
+                width="400px"
+                height="267px"
+                className={styles.image}
+              />
               <span>
-                <Image
-                  src={blogPic}
-                  alt=""
-                  width="400px"
-                  height="267px"
-                  className={styles.image}
-                />
-                <span>
-                  <h3 className={styles.title}>Personal homepage</h3>
-                  <p className={styles.p}>
-                    Made with Next.js and Sanity.io as a learning project, and a
-                    way to document and share what I have learned on the way.
-                  </p>
-                </span>
-                <div className={styles.buttons}>
-                  <Link
-                    target="_blank"
-                    rel="noreferrer"
-                    href="https://github.com/hmbjorkevoll/personal-website"
-                    passHref
-                  >
-                    <a
-                      className={styles.sourceCode}
-                    >{`< > View source code`}</a>
-                  </Link>
-                  <Link href="/" passHref>
-                    <a className={styles.link}>
-                      <FaGlobe /> View live project
-                    </a>
-                  </Link>
-                </div>
+                <h3 className={styles.title}>
+                  Social proof page - Frontend Mentor
+                </h3>
+                <p className={styles.p}>
+                  Made with plain HTML and CSS. Training project found on
+                  Frontend Mentor. ONLY OPTIMIZED FOR WIDTHS OF 375px and
+                  1440px!
+                </p>
               </span>
-            </Link>
+              <div className={styles.buttons}>
+                <a
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://github.com/hmbjorkevoll/frontend-mentor/tree/main/socialproof_frontendmentor-main"
+                  passHref
+                  className={styles.sourceCode}
+                >
+                  {`< > View source code`}
+                </a>
+                <a
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://frontend-mentor-silk.vercel.app/"
+                  passHref
+                  className={styles.link}
+                >
+                  <FaGlobe /> View live project
+                </a>
+              </div>
+            </span>
           </article>
         </div>
       </section>

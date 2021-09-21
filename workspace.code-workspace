@@ -1,11 +1,11 @@
 {
   "folders": [
-	{
-		"path": "."
-	},
-	{
-		"path": "..\\Sanity"
-	}
-],
+    {
+      "path": "."
+    },
+    {
+      "path": "..\\Sanity"
+    }
+  ],
   "settings": {}
 }
