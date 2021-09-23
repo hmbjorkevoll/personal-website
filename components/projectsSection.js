@@ -5,7 +5,7 @@ import Link from "next/link";
 import noteAppPic from "../public/noteApp.PNG";
 import blogPic from "../public/blogPic.PNG";
 import socialProofPic from "../public/socialProof.PNG";
-import { FaGlobe } from "react-icons/fa";
+import { FaGlobe, FaExternalLinkAlt } from "react-icons/fa";
 
 export default function ProjectsSection() {
   return (
