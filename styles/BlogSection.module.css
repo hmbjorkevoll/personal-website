@@ -15,8 +15,17 @@
 .h2 {
   color: var(--hero-bg-color);
   text-align: center;
-  cursor: pointer;
   font-size: 50px;
+  margin: 0px 0px 20px;
+}
+
+.h3 {
+  color: var(--hero-bg-color);
+  text-align: center;
+  cursor: pointer;
+  font-size: 20px;
+  margin-top: 0;
+  margin-bottom: 20px;
 }
 
 .recentPosts {

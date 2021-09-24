@@ -31,8 +31,9 @@ export default function BlogSection(props) {
   return (
     <main className={styles.blogSection}>
       <section className={styles.section}>
+        <h2 className={styles.h2}>Latest blog posts</h2>
         <Link href={"/post"} passHref>
-          <h2 className={styles.h2}>Latest blog posts:</h2>
+          <h3 className={styles.h3}>(Click here to view all blog posts)</h3>
         </Link>
         <div className={styles.recentPosts}>
           {postData &&
