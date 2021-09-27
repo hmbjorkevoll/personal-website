@@ -1,10 +1,8 @@
-import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/BlogSection.module.css";
 import imageUrlBuilder from "@sanity/image-url";
 import Link from "next/link";
 import { useState, useEffect } from "react";
-import { useRouter } from "next/router";
 import groq from "groq";
 import sanityClient from "../client";
 
