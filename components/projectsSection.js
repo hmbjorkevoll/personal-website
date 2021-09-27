@@ -1,10 +1,5 @@
 import Image from "next/image";
 import styles from "../styles/ProjectsSection.module.css";
-import Link from "next/link";
-import noteAppPic from "../public/noteApp.PNG";
-import blogPic from "../public/blogPic.PNG";
-import socialProofPic from "../public/socialProof.PNG";
-import timeTrackingDashboardPic from "../public/screenshot.PNG";
 import { FaGlobe, FaExternalLinkAlt } from "react-icons/fa";
 import { useState, useEffect } from "react";
 import sanityClient from "../client";
