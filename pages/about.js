@@ -7,11 +7,19 @@ import profilePic from "../public/Profilepicture.jpg";
 export default function About() {
   return (
     <div className={styles.aboutPage}>
-<div className={styles.triangle}>
-    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-        <path d="M892.25 114.72L0 0 0 120 1200 120 1200 0 892.25 114.72z" className={styles.shapeFill}></path>
-    </svg>
-</div>
+      <div className={styles.triangle}>
+        <svg
+          data-name="Layer 1"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1200 120"
+          preserveAspectRatio="none"
+        >
+          <path
+            d="M892.25 114.72L0 0 0 120 1200 120 1200 0 892.25 114.72z"
+            className={styles.shapeFill}
+          ></path>
+        </svg>
+      </div>
       <div className={styles.aboutContents}>
         <h2 className={styles.headline}>About me</h2>
         <Image
@@ -20,10 +28,6 @@ export default function About() {
           className={styles.image}
         />
         {/* Insert blog post snippets from latest posts in here */}
-        <a className={styles.a}>
-          {`Oh, you're still here? You actually want to know some stuff about me,
-        cool. I'm a former physiotherapist turned web-developer.`}
-        </a>
         <p className={styles.p}>
           I love to see design come to life, and to make stuff that makes life
           easier! In a previous chapter of mye life a worked as a

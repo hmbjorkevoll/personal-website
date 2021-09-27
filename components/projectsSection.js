@@ -5,6 +5,7 @@ import Link from "next/link";
 import noteAppPic from "../public/noteApp.PNG";
 import blogPic from "../public/blogPic.PNG";
 import socialProofPic from "../public/socialProof.PNG";
+import timeTrackingDashboardPic from "../public/screenshot.PNG";
 import { FaGlobe, FaExternalLinkAlt } from "react-icons/fa";
 
 export default function ProjectsSection() {
@@ -28,7 +29,8 @@ export default function ProjectsSection() {
                 <h3 className={styles.title}>Note taking app</h3>
                 <p className={styles.p}>
                   Simple app for taking notes from favourite podcasts, storing
-                  the notes in localStorage. Still tweaking the functionality.
+                  the notes in localStorage. Built with HTML and vanilla JSS.
+                  Still tweaking the functionality.
                 </p>
               </span>
               <div className={styles.buttons}>
@@ -44,6 +46,45 @@ export default function ProjectsSection() {
                   target="_blank"
                   rel="noreferrer"
                   href="https://hmbjorkevoll.github.io/NotesApp/"
+                  className={styles.link}
+                >
+                  <FaGlobe /> View live project
+                </a>
+              </div>
+            </span>
+          </article>
+          <article className={styles.projectCard}>
+            <span>
+              <Image
+                src={timeTrackingDashboardPic}
+                alt=""
+                width="400px"
+                height="267px"
+                layout="responsive"
+                className={styles.image}
+              />
+              <span>
+                <h3 className={styles.title}>
+                  Time tracking dashboard - Frontend Mentor
+                </h3>
+                <p className={styles.p}>
+                  Made with Next.js. Training project found on Frontend Mentor.
+                  Responsive design, using state to dynamically update cards.
+                </p>
+              </span>
+              <div className={styles.buttons}>
+                <a
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://github.com/hmbjorkevoll/frontend-mentor/tree/main/time-tracking-dashboard"
+                  className={styles.sourceCode}
+                >
+                  {`< > View source code`}
+                </a>
+                <a
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://timetracking-dashboard.vercel.app/"
                   className={styles.link}
                 >
                   <FaGlobe /> View live project
@@ -72,7 +113,6 @@ export default function ProjectsSection() {
                   target="_blank"
                   rel="noreferrer"
                   href="https://github.com/hmbjorkevoll/personal-website"
-                  passHref
                   className={styles.sourceCode}
                 >
                   {`< > View source code`}
@@ -109,7 +149,6 @@ export default function ProjectsSection() {
                   target="_blank"
                   rel="noreferrer"
                   href="https://github.com/hmbjorkevoll/frontend-mentor/tree/main/socialproof_frontendmentor-main"
-                  passHref
                   className={styles.sourceCode}
                 >
                   {`< > View source code`}
@@ -118,7 +157,6 @@ export default function ProjectsSection() {
                   target="_blank"
                   rel="noreferrer"
                   href="https://frontend-mentor-silk.vercel.app/"
-                  passHref
                   className={styles.link}
                 >
                   <FaGlobe /> View live project
