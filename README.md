@@ -1,4 +1,4 @@
-This is a [Next.js](https://nextjs.org/) project, made with Create Next App and Sanity.io.
+This is a [Next.js](https://nextjs.org/) project with all content published with Sanity.io.
 
 
 The live version is up and running at https://www.hmbjorkevoll.com. 
