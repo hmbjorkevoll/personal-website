@@ -5,7 +5,7 @@ export const Layout = ({ children, pageProps }) => {
   return (
     <>
       <Navbar id="top" />
-      <main pageProps={pageProps}>{children}</main>
+      <main>{children}</main>
       <Footer />
     </>
   );

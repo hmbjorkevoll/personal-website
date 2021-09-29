@@ -25,7 +25,7 @@ export default function BlogSection(props) {
   }, []);
 
   return (
-    <main className={styles.blogSection} id="blogSection">
+    <main className={styles.blogSection}>
       <section className={styles.section}>
         <h2 className={styles.h2}>Latest blog posts</h2>
         <Link href={"/post"} passHref>
@@ -68,6 +68,7 @@ export default function BlogSection(props) {
           <path
             d="M892.25 114.72L0 0 0 120 1200 120 1200 0 892.25 114.72z"
             className={styles.shapeFill}
+            id="projectsSection"
           ></path>
         </svg>
       </div>
