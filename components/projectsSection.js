@@ -25,7 +25,7 @@ export default function ProjectsSection() {
   }, []);
 
   return (
-    <main className={styles.projectsSection}>
+    <main className={styles.projectsSection} id="projectsSection">
       <section className={styles.section}>
         <h2 className={styles.h2}>Projects</h2>
         <div className={styles.projects}>
