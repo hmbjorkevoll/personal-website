@@ -1,4 +1,3 @@
-import Image from "next/image";
 import styles from "../styles/AboutSection.module.css";
 import { useState, useEffect } from "react";
 import sanityClient from "../client";
@@ -24,7 +23,7 @@ export default function AboutSection() {
   }, []);
   console.log(aboutData);
   return (
-    <div className={styles.aboutSection}>
+    <div className={styles.aboutSection} id="aboutSection">
       {aboutData &&
         aboutData.map((about) => (
           <section className={styles.section} key={about.title}>

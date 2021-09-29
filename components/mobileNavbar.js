@@ -8,7 +8,7 @@ const MobileNavbar = ({ changeState, ...rest }) => {
     <nav className={styles.mobileNavbar}>
       <ul className={styles.menuItems}>
         <li className={styles.mobile}>
-          <Link passHref href="/">
+          <Link passHref href="/#top">
             <FaHome
               className={styles.navLink}
               onClick={() => changeState(true)}
@@ -16,21 +16,21 @@ const MobileNavbar = ({ changeState, ...rest }) => {
           </Link>
         </li>
         <li className={styles.mobile}>
-          <Link passHref href="/post">
+          <Link passHref href="/#blogSection">
             <a className={styles.blog} onClick={() => changeState(true)}>
               Blog
             </a>
           </Link>
         </li>
         <li className={styles.mobile}>
-          <Link passHref href="/projects">
+          <Link passHref href="/#projectsSection">
             <a className={styles.projects} onClick={() => changeState(true)}>
               Projects
             </a>
           </Link>
         </li>
         <li className={styles.mobile}>
-          <Link href="/about">
+          <Link href="/aboutSection">
             <a className={styles.about} onClick={() => changeState(true)}>
               About
             </a>

@@ -1,9 +1,7 @@
 import Image from "next/image";
 import styles from "../styles/BlogSection.module.css";
-import imageUrlBuilder from "@sanity/image-url";
 import Link from "next/link";
 import { useState, useEffect } from "react";
-import groq from "groq";
 import sanityClient from "../client";
 
 export default function BlogSection(props) {
@@ -27,7 +25,7 @@ export default function BlogSection(props) {
   }, []);
 
   return (
-    <main className={styles.blogSection}>
+    <main className={styles.blogSection} id="blogSection">
       <section className={styles.section}>
         <h2 className={styles.h2}>Latest blog posts</h2>
         <Link href={"/post"} passHref>

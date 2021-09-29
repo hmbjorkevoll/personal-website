@@ -1,6 +1,5 @@
-import Head from "next/head";
+
 import Image from "next/image";
-import Navbar from "../components/navbar";
 import styles from "../styles/AboutPage.module.css";
 import profilePic from "../public/Profilepicture.jpg";
 
@@ -27,7 +26,6 @@ export default function About() {
           alt="profile picture"
           className={styles.image}
         />
-        {/* Insert blog post snippets from latest posts in here */}
         <p className={styles.p}>
           I love to see design come to life, and to make stuff that makes life
           easier! In a previous chapter of mye life a worked as a

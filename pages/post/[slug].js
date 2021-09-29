@@ -4,6 +4,7 @@ import Image from "next/image";
 import BlockContent from "@sanity/block-content-to-react";
 import client from "../../client";
 import groq from "groq";
+import Link from "next/link";
 
 function urlFor(source) {
   return imageUrlBuilder(client).image(source);
@@ -40,6 +41,11 @@ const Post = (props) => {
           imageOptions={{ w: 450, h: 300, fit: "max" }}
           {...client.config()}
         />
+        <Link href="/post">
+          <a className={styles.backlink}>
+            Go back to the list of all blog posts
+          </a>
+        </Link>
       </article>
     </div>
   );
