@@ -8,7 +8,7 @@ export default function HeroSection() {
         <br />
         turned
         <br />
-        web-developer
+        front-end developer
       </h1>
       <h2 className={styles.tagline}>
         <span className={styles.code}>code</span>{" "}
@@ -27,6 +27,7 @@ export default function HeroSection() {
           <path
             d="M1200 0L0 0 892.25 114.72 1200 0z"
             className={styles.shapeFill}
+            id="blogSection"
           ></path>
         </svg>
       </div>
