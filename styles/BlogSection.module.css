@@ -33,12 +33,12 @@
   flex-wrap: wrap;
   justify-content: space-evenly;
   gap: 20px 20px;
-  min-width: 320px;
+  min-width: 290px;
 }
 
 .postCard {
   margin: 15px;
-  min-width: 315px;
+  min-width: 290px;
   max-width: 400px;
   color: rgb(235, 235, 235);
   background: var(--hero-bg-color);
