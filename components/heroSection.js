@@ -12,10 +12,10 @@ export default function HeroSection() {
       </h1>
       <h2 className={styles.tagline}>
         <span className={styles.code}>code</span>{" "}
-        <span className={styles.plus}>+ </span>
-        <span className={styles.ux}>ux</span>{" "}
-        <span className={styles.plus}>+ </span>
-        <span className={styles.health}>health</span>
+        <span className={styles.plus}>to </span>
+        <span className={styles.ux}>make</span>{" "}
+        <span className={styles.plus}>better </span>
+        <span className={styles.health}>lives</span>
       </h2>
       <div className={styles.triangle}>
         <svg
