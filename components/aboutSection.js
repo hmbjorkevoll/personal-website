@@ -21,7 +21,6 @@ export default function AboutSection() {
       .then((data) => setAboutData(data))
       .catch(console.error);
   }, []);
-  console.log(aboutData);
   return (
     <div className={styles.aboutSection} id="aboutSection">
       {aboutData &&
