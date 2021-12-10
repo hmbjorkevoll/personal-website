@@ -1,11 +1,7 @@
-import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/BlogSection.module.css";
-import imageUrlBuilder from "@sanity/image-url";
 import Link from "next/link";
 import { useState, useEffect } from "react";
-import { useRouter } from "next/router";
-import groq from "groq";
 import sanityClient from "../client";
 
 export default function BlogSection(props) {
@@ -31,8 +27,9 @@ export default function BlogSection(props) {
   return (
     <main className={styles.blogSection}>
       <section className={styles.section}>
+        <h2 className={styles.h2}>Latest blog posts</h2>
         <Link href={"/post"} passHref>
-          <h2 className={styles.h2}>Latest blog posts:</h2>
+          <h3 className={styles.h3}>(Click here to view all blog posts)</h3>
         </Link>
         <div className={styles.recentPosts}>
           {postData &&
@@ -71,6 +68,7 @@ export default function BlogSection(props) {
           <path
             d="M892.25 114.72L0 0 0 120 1200 120 1200 0 892.25 114.72z"
             className={styles.shapeFill}
+            id="projectsSection"
           ></path>
         </svg>
       </div>

@@ -5,7 +5,7 @@ import HamburgerButton from "./hamburgerButton";
 import { useState, useEffect } from "react";
 import MobileNavbar from "./mobileNavbar";
 
-export const Navbar = () => {
+export const Navbar = ({ href, name }) => {
   const [isOpen, setOpen] = useState(false);
   const [scrollable, setScrollable] = useState(false);
 
@@ -31,7 +31,7 @@ export const Navbar = () => {
     <div className={styles.top}>
       <div className={styles.container}>
         <nav className={styles.navbar}>
-          <Link passHref href="/">
+          <Link passHref href="/#top">
             <FaHome className={styles.navLink} onClick={homeIconCloseMenu} />
           </Link>
           <div className={styles.hamburgerIcon} onClick={toggleMenu}>
@@ -40,17 +40,17 @@ export const Navbar = () => {
           <div>{isOpen ? <MobileNavbar changeState={toggleMenu} /> : null}</div>
           <ul className={styles.menuItems}>
             <li className={styles.desktop}>
-              <Link passHref href="/post">
+              <Link passHref href="/#blogSection">
                 <a className={styles.blog}>Blog</a>
               </Link>
             </li>
             <li className={styles.desktop}>
-              <Link passHref href="/projects">
+              <Link passHref href="/#projectsSection">
                 <a className={styles.projects}>Projects</a>
               </Link>
             </li>
             <li className={styles.desktop}>
-              <Link href="/about">
+              <Link href="/#aboutSection">
                 <a className={styles.about}>About</a>
               </Link>
             </li>

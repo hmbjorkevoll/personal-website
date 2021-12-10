@@ -15,8 +15,17 @@
 .h2 {
   color: var(--hero-bg-color);
   text-align: center;
-  cursor: pointer;
   font-size: 50px;
+  margin: 0px 0px 20px;
+}
+
+.h3 {
+  color: var(--hero-bg-color);
+  text-align: center;
+  cursor: pointer;
+  font-size: 20px;
+  margin-top: 0;
+  margin-bottom: 20px;
 }
 
 .recentPosts {
@@ -24,12 +33,12 @@
   flex-wrap: wrap;
   justify-content: space-evenly;
   gap: 20px 20px;
-  min-width: 320px;
+  min-width: 290px;
 }
 
 .postCard {
   margin: 15px;
-  min-width: 315px;
+  min-width: 290px;
   max-width: 400px;
   color: rgb(235, 235, 235);
   background: var(--hero-bg-color);

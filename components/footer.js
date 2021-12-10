@@ -1,6 +1,4 @@
-import Link from "next/link";
 import styles from "../styles/Footer.module.css";
-import HomeIcon from "./IconHomeNavbar";
 
 export const Footer = () => {
   return (
